@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registro de Usuario</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+
+<div class="container">
+<h2>Registro de Usuario</h2>
+
+<form id="registroForm">
+
+<div class="form-group">
+<label>Nombre completo</label>
+<input type="text" id="nombre" required>
+<small class="error"></small>
+</div>
+
+<div class="form-group">
+<label>Correo electrónico</label>
+<input type="email" id="correo" required>
+<small class="error"></small>
+</div>
+
+<div class="form-group">
+<label>Contraseña</label>
+<input type="password" id="password" required>
+<small class="error"></small>
+</div>
+
+<div class="form-group">
+<label>Confirmar contraseña</label>
+<input type="password" id="confirmPassword" required>
+<small class="error"></small>
+</div>
+
+<div class="form-group">
+<label>Fecha de nacimiento</label>
+<input type="date" id="fecha" required>
+<small class="error"></small>
+</div>
+
+<div class="form-group">
+<label>Celular</label>
+<input type="text" id="celular" placeholder="3001234567" required>
+<small class="error"></small>
+</div>
+
+<div class="form-group">
+<label>Número de teléfono (opcional)</label>
+<input type="text" id="telefono">
+<small class="error"></small>
+</div>
+
+<div class="checkbox">
+<input type="checkbox" id="terminos">
+<label>Acepto los términos y condiciones</label>
+<small class="error"></small>
+</div>
+
+<button type="submit" id="btnEnviar">Registrar</button>
+
+<p id="mensajeExito"></p>
+
+</form>
+
+</div>
+
+<script src="assets/validation.js"></script>
+
+</body>
+</html>
